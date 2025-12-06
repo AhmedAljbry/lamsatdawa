@@ -1,3 +1,5 @@
+![LamsatDawa Platform](Gemini_Generated_Image_oqhssuoqhssuoqhs.png)
+
 # LamsatDawa – Product Authenticity Verification Platform  
 ### Flutter Web + Firebase + Admin Dashboard  
 ### Developed by **Ahmed Aljbry**
@@ -16,48 +18,48 @@ This project demonstrates real-world production architecture and end-to-end syst
 ## 🌟 Core Features
 
 ### 🧪 Product Authenticity Verification
-- Users can verify any product by:
-  - Scanning QR code  
-  - Entering serial number manually  
-- Firebase checks the product ID in real-time  
-- Returns full product details:
+- Verify product via:
+  - QR code scanning  
+  - Manual serial/Batch number input  
+- Real-time Firestore lookup  
+- Returns:
   - Product name  
   - Batch number  
   - Expiry date  
   - Verification status  
   - First verification time  
-  - Number of verifications  
-- Fake / tampered code detection  
-- Warning for reused or invalid codes  
+  - Verification count  
+- Detects fake/tampered/invalid codes  
+- Alerts for reused codes  
 
 ### 🏷 Multi-Brand / Multi-Website System
-- Supports multiple company websites under one platform  
+- Supports multiple brands under one umbrella  
 - Each brand has:
-  - Its own logo  
-  - Its own color theme  
-  - Its own product database  
+  - Dedicated theme  
+  - Logo  
+  - Product database  
+  - URL/website entry  
 
 ### 🛠 Admin Dashboard
-- Add / edit / delete products  
-- Upload batches  
-- Generate unique serial numbers  
-- Export CSV / Excel  
-- Track verification logs  
-- Real-time dashboard statistics  
+- Add, edit, delete products  
+- Batch & serial number generation  
+- Export CSV/Excel  
+- Real-time verification logs  
+- Dashboard statistics:
   - Total scans  
   - Fake attempts  
-  - Locations of scans (if enabled)  
+  - Geo-locations (if enabled)  
 
 ### 🔔 Optional Customer Features
 - Contact form  
-- Product information page  
-- Instructions for product usage  
+- Product details  
+- Usage instructions  
 
-### 💡 Extra (If implemented)
+### 💡 Extra Features (If implemented)
 - Product images  
 - Promotions  
-- Latest updates  
-- Multi-language (Arabic + English)
+- Latest news  
+- Multi-language: Arabic + English  
 
 ---
 
@@ -68,10 +70,10 @@ This project demonstrates real-world production architecture and end-to-end syst
 | **Frontend** | Flutter Web |
 | **Backend** | Firebase Functions (optional) |
 | **Database** | Firebase Firestore |
-| **Auth** | Firebase Authentication |
+| **Authentication** | Firebase Auth |
 | **Hosting** | Firebase Hosting |
-| **Admin Panel** | Flutter Web (separate module) |
-| **QR Code** | qr_flutter / custom generator |
+| **Admin Panel** | Flutter Web |
+| **QR System** | qr_flutter / custom generator |
 
 ---
 
@@ -95,4 +97,3 @@ lib/
   widgets/
   main.dart
   app.dart
-
